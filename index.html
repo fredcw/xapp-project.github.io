@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XApp Project | Traditional Apps, Modern Tech</title>
+    
+    <!-- 1. Import the font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center gap-3">
+                    <img src="https://avatars.githubusercontent.com/u/166827606?s=200&v=4" alt="XApp Logo" class="w-8 h-8 rounded-md">
+                    <span class="text-xl font-bold tracking-tight">XApp <span class="text-emerald-600 font-medium">Project</span></span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                    <a href="#apps" class="hover:text-emerald-600 transition text-sm">Applications</a>
+                    <a href="#tools" class="hover:text-emerald-600 transition text-sm">Tools</a>
+                    <a href="#libraries" class="hover:text-emerald-600 transition text-sm">Libraries</a>
+                    <a href="https://matrix.to/#/#xapp:matrix.org" class="hover:opacity-80 transition">
+                        <img src="https://matrix.to/img/matrix-badge.svg" alt="Chat on Matrix" class="h-6">
+                    </a>
+                    <a href="https://github.com/xapp-project" class="bg-slate-900 text-white px-4 py-1.5 rounded-lg hover:bg-slate-800 transition flex items-center gap-2 text-sm">
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="pt-32 pb-16 px-4 bg-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <img src="https://avatars.githubusercontent.com/u/166827606?s=200&v=4" alt="XApp Project" class="w-24 h-24 mx-auto mb-8 rounded-2xl shadow-xl">
+            <h1 class="text-5xl md:text-7xl font-black text-slate-900 mb-6 tracking-tight">
+                Traditional Interfaces.<br><span class="text-emerald-600">Cross-Desktop Stability.</span>
+            </h1>
+            <p class="text-lg text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                A set of GTK based applications designed to be desktop and distro agnostic using traditional user interfaces (titlebars, menubars)
+            </p>
+            <div class="flex flex-col items-center gap-6">
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="https://github.com/xapp-project" class="bg-emerald-600 text-white px-8 py-3 rounded-xl font-bold hover:bg-emerald-700 transition shadow-lg shadow-emerald-200">Explore Repositories</a>
+                    <a href="#apps" class="bg-slate-100 text-slate-700 px-8 py-3 rounded-xl font-bold hover:bg-slate-200 transition">View Software Suite</a>
+                </div>
+                <a href="https://matrix.to/#/#xapp:matrix.org" class="hover:scale-105 transition duration-200">
+                    <img src="https://matrix.to/img/matrix-badge.svg" alt="Chat on Matrix" class="h-8">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Core Applications -->
+    <section id="apps" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-slate-900">The Software Suite</h2>
+                <p class="text-slate-600 mt-2 text-lg">Essential core applications following the XApp philosophy.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Xed -->
+                <div class="card p-8 rounded-3xl border border-slate-200 bg-white">
+                    <img src="https://raw.githubusercontent.com/linuxmint/mint-y-icons/master/usr/share/icons/Mint-Y/legacy/512/accessories-text-editor.png" alt="Xed" class="w-14 h-14 mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Xed</h3>
+                    <p class="text-slate-600 text-sm mb-6">xed is a small and lightweight text editor based on Pluma that supports most standard editing features, plus several not found in your average text editor (plugins being the most notable of these).</p>
+                    <a href="https://github.com/linuxmint/xed" class="link">GitHub Repository</a>
+                </div>
+
+                <!-- Xreader -->
+                <div class="card p-8 rounded-3xl border border-slate-200 bg-white">
+                    <img src="https://raw.githubusercontent.com/linuxmint/xreader/master/data/icons/scalable/apps/xreader.svg" alt="Xreader" class="w-14 h-14 mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Xreader</h3>
+                    <p class="text-slate-600 text-sm mb-6">Xreader (based on Atril) is a document viewer capable of displaying multiple and single page document formats like PDF and Postscript.</p>
+                    <a href="https://github.com/linuxmint/xreader" class="link">GitHub Repository</a>
+                </div>
+
+                <!-- Pix -->
+                <div class="card p-8 rounded-3xl border border-slate-200 bg-white">
+                    <img src="https://raw.githubusercontent.com/linuxmint/pix/master/data/icons/public/hicolor/scalable/apps/pix.svg" alt="Pix" class="w-14 h-14 mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Pix</h3>
+                    <p class="text-slate-600 text-sm mb-6">An image viewer and organizer based on gThumb with image editing features and advanced tools.</p>
+                    <a href="https://github.com/linuxmint/pix" class="link">GitHub Repository</a>
+                </div>
+
+                <!-- Xviewer -->
+                <div class="card p-8 rounded-3xl border border-slate-200 bg-white">
+                    <img src="https://raw.githubusercontent.com/linuxmint/xviewer/master/data/icons/scalable/apps/xviewer.svg" alt="Xviewer" class="w-14 h-14 mb-6">
+                    <h3 class="text-2xl font-bold mb-2">Xviewer</h3>
+                    <p class="text-slate-600 text-sm mb-6">Xviewer is a simple image viewer, based on Eye of GNOME, which uses the gdk-pixbuf library. It can deal with large images, and zoom and scroll with constant memory usage. Its goals are simplicity and standards compliance.</p>
+                    <a href="https://github.com/linuxmint/xviewer" class="link">GitHub Repository</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- System Tools -->
+    <section id="tools" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-white">System Integration</h2>
+            <p class="text-slate-400 mb-12 max-w-2xl mx-auto">Standalone utilities designed to work consistently in any environment.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-left">
+                <!-- Blueberry -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <img src="https://raw.githubusercontent.com/linuxmint/blueberry/master/usr/share/icons/hicolor/scalable/status/blueberry.svg" alt="Blueberry" class="w-8 h-8 mb-4">
+                    <h4 class="font-bold text-lg mb-1 text-white">Blueberry</h4>
+                    <p class="text-slate-400 text-xs mb-4">The Bluetooth tool, blueberry, is a frontend to gnome-bluetooth with systray support.</p>
+                    <a href="https://github.com/linuxmint/blueberry" class="text-blue-400 text-xs font-bold">GitHub →</a>
+                </div>
+
+                <!-- GOA GTK -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <img src="https://raw.githubusercontent.com/xapp-project/gnome-online-accounts-gtk/master/data/icons/hicolor/scalable/apps/gnome-online-accounts-gtk.svg" alt="GOA" class="w-8 h-8 mb-4">
+                    <h4 class="font-bold text-lg mb-1 text-white">GOA-GTK</h4>
+                    <p class="text-slate-400 text-xs mb-4">A standalone GTK frontend for GNOME Online Accounts, enabling cloud sync on non-GNOME desktops.</p>
+                    <a href="https://github.com/xapp-project/gnome-online-accounts-gtk" class="text-cyan-400 text-xs font-bold">GitHub →</a>
+                </div>
+
+                <!-- Fingwit -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <img src="https://raw.githubusercontent.com/xapp-project/fingwit/master/data/icons/hicolor/scalable/apps/fingwit.svg" alt="Fingwit" class="w-8 h-8 mb-4">
+                    <h4 class="font-bold text-lg mb-1 text-white">Fingwit</h4>
+                    <p class="text-slate-400 text-xs mb-4">Fingwit is used to configure fingerprint authentication.
+
+</p>
+                    <a href="https://github.com/xapp-project/fingwit" class="text-emerald-400 text-xs font-bold">GitHub →</a>
+                </div>
+
+                <!-- Slick Greeter -->
+                <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700">
+                    <img src="https://raw.githubusercontent.com/linuxmint/slick-greeter/master/files/slick-greeter.svg" alt="Slick Greeter" class="w-8 h-8 mb-4">
+                    <h4 class="font-bold text-lg mb-1 text-white">Slick Greeter</h4>
+                    <p class="text-slate-400 text-xs mb-4">Slick-greeter is a slick-looking LightDM greeter originally forked from unity-greeter and modified to work on its own (without gnome-settings-daemon, gnome or unity).</p>
+                    <a href="https://github.com/linuxmint/slick-greeter" class="text-amber-400 text-xs font-bold">GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Developer & Community Section -->
+    <section id="libraries" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-12">
+                
+                <!-- Libraries -->
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold mb-8 text-slate-900">Developer Infrastructure</h2>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex items-start gap-4">
+                            <img src="https://avatars.githubusercontent.com/u/166827606?s=200&v=4" class="w-8 h-8 opacity-40" alt="LibXApp">
+                            <div>
+                                <h4 class="font-bold mb-1">LibXApp</h4>
+                                <p class="text-slate-600 text-sm mb-2">This project gathers the components which are common to multiple GTK desktop environments (Cinnamon, MATE and Xfce) and required to implement cross-DE solutions. It’s available in Python and JS as well, through GObject Introspection.</p>
+                                <a href="https://github.com/linuxmint/xapp" class="text-emerald-600 text-xs font-bold">Source →</a>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex items-start gap-4">
+                            <img src="https://avatars.githubusercontent.com/u/166827606?s=200&v=4" class="w-8 h-8 opacity-40" alt="LibAdapta">
+                            <div>
+                                <h4 class="font-bold mb-1">LibAdapta</h4>
+                                <p class="text-slate-600 text-sm mb-2">libAdapta is a 'soft' fork of libAdwaita with themeing support. It provides the same features and the same look as libAdwaita by default but in desktop environments which provide theme selection, libAdapta apps follow the theme and use the proper window controls.</p>
+                                <a href="https://github.com/xapp-project/libadapta" class="text-emerald-600 text-xs font-bold">Source →</a>
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100 flex items-start gap-4">
+                            <img src="https://avatars.githubusercontent.com/u/166827606?s=200&v=4" class="w-8 h-8 opacity-40" alt="XApp Symbols">
+                            <div>
+                                <h4 class="font-bold mb-1">XApp Symbolic Icons</h4>
+                                <p class="text-slate-600 text-sm mb-2">A set of symbolic icons which replaces the GNOME-specific Adwaita set.</p>
+                                <a href="https://github.com/xapp-project/xapp-symbolic-icons" class="text-emerald-600 text-xs font-bold">Source →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Community -->
+                <div class="bg-emerald-50 p-8 rounded-3xl border border-emerald-100 h-fit">
+                    <h3 class="text-2xl font-bold mb-4 text-emerald-900">Community</h3>
+                    <p class="text-emerald-800 text-sm mb-6 leading-relaxed">Join the XApp Matrix chatroom to discuss development and contribute.</p>
+                    <a href="https://matrix.to/#/#xapp:matrix.org" class="block bg-white p-4 rounded-xl border border-emerald-200 hover:shadow-md transition">
+                        <img src="https://matrix.to/img/matrix-badge.svg" alt="Chat on Matrix">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-50 border-t border-slate-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <img src="https://avatars.githubusercontent.com/u/166827606?s=200&v=4" alt="XApp Logo" class="w-6 h-6 grayscale opacity-50">
+                <span class="font-bold text-slate-500 text-sm uppercase tracking-wider">XApp Project</span>
+            </div>
+            <p class="text-slate-400 text-xs">An open-source initiative by the Linux Mint Team.</p>
+            <div class="flex gap-6 text-sm font-bold text-slate-400">
+                <a href="https://github.com/xapp-project" class="hover:text-slate-900 transition">GitHub</a>
+                <a href="https://matrix.to/#/#xapp:matrix.org" class="hover:text-slate-900 transition">Matrix</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

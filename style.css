@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.08);
+}
+
+.card img {
+    filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+}
+
+.link {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 0.875rem;
+    color: #10b981;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Scroll reveal helper */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
